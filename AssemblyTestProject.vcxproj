@@ -83,6 +83,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalOptions>libcmt.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
+    <MASM>
+      <AdditionalOptions>-Fl %(AdditionalOptions)</AdditionalOptions>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -112,6 +115,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalOptions>libcmt.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
+    <MASM>
+      <AdditionalOptions>-Fl %(AdditionalOptions)</AdditionalOptions>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
