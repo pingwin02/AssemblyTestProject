@@ -1,15 +1,15 @@
-extern ExitProcess : PROC
-public main
+public function
 
 .data
 
 
 .code
-main PROC
+function PROC
+	push rbp
+	mov rbp, rsp
 
 
-
-	mov rcx, 0
-	call ExitProcess
-main ENDP
+	pop rbp
+	ret
+function ENDP
 END

@@ -1,5 +1,6 @@
-@echo Asemblacja i linkowanie programu 32-bitowego
+@echo Asemblacja, kompilacja i linkowanie programu 32-bitowego
+cl -c ../source.c
 ml -c -Cp -coff -Fl ../source32.asm
 if errorlevel 1 goto koniec
-link -subsystem:console -out:source32.exe source32.obj libcmt.lib
+link -subsystem:console -out:source.exe source32.obj source.obj 
 :koniec

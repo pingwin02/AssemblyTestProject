@@ -1,17 +1,19 @@
 .686
 .model flat
-extern _ExitProcess@4 : PROC
-public _main
+public _function
 
 .data
 
 
 .code
-_main PROC
+_function PROC
+	push ebp
+	mov ebp, esp
 
 
 
-	push dword PTR 0
-	call _ExitProcess@4
-_main ENDP
+
+	pop ebp
+	ret
+_function ENDP
 END
