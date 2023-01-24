@@ -22,4 +22,12 @@
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="source64.lst">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="source32.lst">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
